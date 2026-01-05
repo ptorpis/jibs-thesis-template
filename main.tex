@@ -4,10 +4,36 @@
 
 \begin{document}
 
-\title{Title on Two or Three Rows}
-\author{Firstname Lastname, Firstname2 Lastname2}
-\date{Date}
-\maketitle
+\input{config/personal_info.tex}
+
+\begin{titlepage}
+    % Logo top-left
+    \begin{flushleft}
+        \includegraphics[width=0.25\textwidth]{assets/jibs-logo.png}
+    \end{flushleft}
+
+    % Main title
+    \vspace*{0.2\textheight}
+    \begin{singlespace}
+        {\bfseries\fontsize{40}{48}\selectfont
+            \ThesisTitle\par}
+    \end{singlespace}
+
+    \vspace{1cm}
+    {\fontsize{16}{20}\selectfont \ThesisSubtitle\par}
+
+    % Bottom-right text block, left-aligned inside
+    \vfill
+    \begin{flushright}
+        \begin{minipage}{0.50\textwidth}
+            {\fontsize{10}{10}\selectfont
+                \ThesisFooter
+            }
+        \end{minipage}
+    \end{flushright}
+
+\end{titlepage}
+
 
 \tableofcontents
 
