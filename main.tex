@@ -34,6 +34,44 @@
 
 \end{titlepage}
 
+\begin{titlepage}
+
+    \input{config/frontpage_info.tex}
+
+    % --- Degree / Program Info ---
+    \textbf{\FrontpageDegree}
+    \vspace{1cm}
+
+    % --- Title, authors, tutor, date ---
+    \begin{tabular}{@{}ll@{}}
+        \textbf{Title:}   & \FrontpageTitle   \\
+        \textbf{Authors:} & \FrontpageAuthors \\
+        \textbf{Tutor:}   & \FrontpageTutor   \\
+        \textbf{Date:}    & \FrontpageDate
+    \end{tabular}
+
+    \vspace{1cm}
+
+    % --- Key terms with 2pt horizontal line ---
+    \textbf{Key terms:} \FrontpageKeywords
+    \vspace{0.2cm}
+    \hrule height 2pt
+    \vspace{0.5cm}
+
+    % --- Abstract Section ---
+    \textbf{Abstract (Option 1)} % or Option 2
+    \vspace{0.3cm}
+
+    \FrontpageAbstractOptionOne
+
+    \textbf{Abstract (Option 2)} % or Option 2
+
+    % If you want Option 2 instead, just use:
+    \FrontpageAbstractOptionTwo
+
+\end{titlepage}
+
+
 
 \tableofcontents
 
