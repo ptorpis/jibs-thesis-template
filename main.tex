@@ -34,47 +34,58 @@
 
 \end{titlepage}
 
-\begin{titlepage}
 
-    \input{config/frontpage_info.tex}
+% ROMAN NUMERALS FROM HERE:
+\pagenumbering{roman}  % start Roman numerals
+\setcounter{page}{1}   % page i
 
-    % --- Degree / Program Info ---
-    \textbf{\FrontpageDegree}
-    \vspace{1cm}
+\input{config/frontpage_info.tex}
 
-    % --- Title, authors, tutor, date ---
-    \begin{tabular}{@{}ll@{}}
-        \textbf{Title:}   & \FrontpageTitle   \\
-        \textbf{Authors:} & \FrontpageAuthors \\
-        \textbf{Tutor:}   & \FrontpageTutor   \\
-        \textbf{Date:}    & \FrontpageDate
-    \end{tabular}
+% --- Degree / Program Info ---
+\textbf{\FrontpageDegree}
+\vspace{1cm}
 
-    \vspace{1cm}
+% --- Title, authors, tutor, date ---
+\begin{tabular}{@{}ll@{}}
+    \textbf{Title:}   & \FrontpageTitle   \\
+    \textbf{Authors:} & \FrontpageAuthors \\
+    \textbf{Tutor:}   & \FrontpageTutor   \\
+    \textbf{Date:}    & \FrontpageDate
+\end{tabular}
 
-    % --- Key terms with 2pt horizontal line ---
-    \textbf{Key terms:} \FrontpageKeywords
-    \vspace{0.2cm}
-    \hrule height 2pt
-    \vspace{0.5cm}
+\vspace{1cm}
 
-    % --- Abstract Section ---
-    \textbf{Abstract (Option 1)} % or Option 2
-    \vspace{0.3cm}
+% --- Key terms with 2pt horizontal line ---
+\textbf{Key terms:} \FrontpageKeywords
+\vspace{0.2cm}
+\hrule height 2pt
+\vspace{0.5cm}
 
-    \FrontpageAbstractOptionOne
+% --- Abstract Section ---
+\textbf{Abstract (Option 1)} % or Option 2
+\vspace{0.3cm}
 
-    \textbf{Abstract (Option 2)} % or Option 2
+\FrontpageAbstractOptionOne
 
-    % If you want Option 2 instead, just use:
-    \FrontpageAbstractOptionTwo
+\textbf{Abstract (Option 2)} % or Option 2
 
-\end{titlepage}
+% If you want Option 2 instead, just use:
+\FrontpageAbstractOptionTwo
 
 
-
+\clearpage
 \tableofcontents
-\pagebreak
+\clearpage
+\renewcommand{\listfigurename}{\LARGE Figures}
+\renewcommand{\listtablename}{\LARGE Tables}
+
+\listoffigures
+\listoftables
+
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 \input{chapters/introduction.tex}
 
@@ -87,5 +98,10 @@ For guidance on proper referencing and APA style, see:
 \href{https://ju.se/library/academic-language/reference-management.html}{\textcolor{blue}{Jönköping University Reference Management Guide}}.
 
 \printbibliography
+
+\clearpage
+\appendix
+
+\input{appendix/appendix_a.tex}
 
 \end{document}

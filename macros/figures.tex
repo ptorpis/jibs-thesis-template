@@ -1,0 +1,11 @@
+% Usage: \Figure[<width>]{image path}{caption}{}
+% <width> is optional; default is 0.8\textwidth
+% Optional width, default 0.8\textwidth
+\newcommand{\Figure}[4][0.8\textwidth]{%
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=#1]{#2}
+        \caption{#3}
+        \label{#4}
+    \end{figure}
+}
