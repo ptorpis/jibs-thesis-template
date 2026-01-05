@@ -14,9 +14,81 @@
 % Graphics
 \usepackage{graphicx}
 
-% Better links
+% For clickable links
 \usepackage[hidelinks]{hyperref}
-\usepackage{bookmark}
+
+% For customizing TOC (dots and colors)
+\usepackage{tocloft}
+\usepackage{titlesec}  % For customizing heading styles
+
+% Numbering and TOC depth
+\setcounter{secnumdepth}{4}  % chapters=1, sections=2, subsections=3, subsubsections=4
+\setcounter{tocdepth}{4}     % include up to subsubsections in TOC
+
+% Chapters
+\titleformat{\chapter}[hang]
+{\bfseries\fontsize{14}{16}\selectfont}
+{\thechapter.}
+{1.5em}
+{}
+
+% Sections
+\titleformat{\section}[hang]
+{\bfseries\fontsize{12}{16}\selectfont}
+{\thesection.}
+{1em}
+{}
+
+% Subsections (level 3)
+\titleformat{\subsection}[hang]
+{\normalfont\fontsize{12}{16}\selectfont}
+{\thesubsection.}
+{1em}
+{}
+
+% Subsubsections (level 4, same as level 3)
+\titleformat{\subsubsection}[hang]
+{\normalfont\fontsize{12}{16}\selectfont}
+{\thesubsubsection.}
+{1em}
+{}
+
+% TOC formatting
+\renewcommand{\contentsname}{Table of Contents}
+
+% Chapters in TOC
+\renewcommand{\cftchapfont}{\bfseries\fontsize{14}{16}\selectfont}
+\renewcommand{\cftchappagefont}{\bfseries\fontsize{14}{16}\selectfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+% Sections in TOC
+\renewcommand{\cftsecfont}{\bfseries\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsecpagefont}{\bfseries\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Subsections in TOC
+\renewcommand{\cftsubsecfont}{\normalfont\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+
+% Subsubsections (level 4) in TOC
+\renewcommand{\cftsubsubsecfont}{\normalfont\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+
+\titlespacing*{\chapter}
+{0pt}      % left margin
+{2.5ex}    % space before chapter title
+{1.5ex}    % space after chapter title
+
+\titlespacing*{\section}
+{0pt}{2.0ex}{1.0ex}
+
+\titlespacing*{\subsection}
+{0pt}{1.5ex}{0.8ex}
+
+\titlespacing*{\subsubsection}
+{0pt}{1.5ex}{0.8ex}
 
 
 % Page geometry
@@ -33,3 +105,15 @@
 % Paragraph formatting
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.75\baselineskip}
+
+
+% For cleaner tables
+\usepackage{booktabs}  % \toprule, \midrule, \bottomrule
+\usepackage{caption}   % customize captions
+\usepackage{array}     % advanced column formatting (optional)
+
+% Set table captions globally
+\captionsetup[table]{font=small, labelfont=bf, skip=0.5em}
+
+\input{macros/table.tex}
+\input{macros/chapter_abstract.tex}

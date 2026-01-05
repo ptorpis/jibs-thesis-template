@@ -1,0 +1,22 @@
+
+% New environment for thesis tables
+% #1 = caption text
+% #2 = label for referencing
+\newenvironment{ThesisTable}[2]{%
+    \begin{table}[htbp]   % float: here/top/bottom
+        \centering
+        \caption{#1}          % Table caption
+        \label{#2}            % Label for cross-referencing
+        \small                % Font size for table contents
+        \renewcommand{\arraystretch}{1.2} % Slightly more vertical spacing
+        }{%
+    \end{table}
+}
+
+% Optional command for table notes (like source notes)
+\newcommand{\TableNote}[1]{%
+    \vspace{0.3em}
+    \begin{center}
+        \footnotesize{\textit{#1}}
+    \end{center}
+}

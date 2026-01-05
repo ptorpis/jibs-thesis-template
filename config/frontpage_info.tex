@@ -1,16 +1,18 @@
 % frontpage_info.tex
 
 \newcommand{\FrontpageDegree}{\LARGE Bachelor/Master Thesis/Degree Project in Business Administration/ Economics/ Informatics/ General Management (select which is appropriate)}
-\newcommand{\FrontpageTitle}{XXXXX}
-\newcommand{\FrontpageAuthors}{A.N. Other and A.N. On}
-\newcommand{\FrontpageTutor}{YYY}
-\newcommand{\FrontpageDate}{2015-05-22}
+\newcommand{\FrontpageTitle}{XXXXX} % enter manually because of the linebreaks
+\newcommand{\FrontpageAuthors}{\ThesisAuthors}
+\newcommand{\FrontpageTutor}{\ThesisSupervisor}
+\newcommand{\FrontpageDate}{\ThesisDate}
 \newcommand{\FrontpageKeywords}{Provide 4-6 key words that are an integral part of your study}
 \newcommand{\FrontpageAbstractOptionOne}{%
-    \textbf{Background:} Whatever\\
-    \textbf{Purpose:} Whoever\\
-    \textbf{Method:} How ever\\
-    \textbf{Conclusion:} The results show that
+    \begin{tabular}{@{}ll@{}}
+        \textbf{Background:} & Background \\
+        \textbf{Purpose:}    & Purpose    \\
+        \textbf{Method:}     & Method     \\
+        \textbf{Conclusion:} & Conclusion
+    \end{tabular}
 }
 \newcommand{\FrontpageAbstractOptionTwo}{%
     XXX is an important theme in Entrepreneurial research. The purpose of the study was to… The study was based on the theory of XXX and a XXX methodology was followed. The findings show that…. Organisations can use these findings to…
