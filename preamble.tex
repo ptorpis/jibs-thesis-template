@@ -55,6 +55,8 @@
 
 % TOC formatting
 \renewcommand{\contentsname}{Table of Contents}
+% Make "Table of Contents" smaller
+
 
 % Chapters in TOC
 \renewcommand{\cftchapfont}{\bfseries\fontsize{14}{16}\selectfont}
@@ -114,6 +116,18 @@
 
 % Set table captions globally
 \captionsetup[table]{font=small, labelfont=bf, skip=0.5em}
+
+\usepackage[
+    backend=biber,
+    style=apa,
+    natbib=true,
+    doi=true,
+    url=true,
+    isbn=false
+]{biblatex}
+
+\addbibresource{references.bib}
+
 
 \input{macros/table.tex}
 \input{macros/chapter_abstract.tex}
