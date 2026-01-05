@@ -1,0 +1,6 @@
+/build/*
+!build/.gitkeep
+
+*.synctex.gz
+*.fls
+*.fdb_latexmk

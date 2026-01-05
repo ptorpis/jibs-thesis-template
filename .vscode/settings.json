@@ -1,0 +1,33 @@
+{
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.bcf",
+        "*.blg",
+        "*.log",
+        "*.out",
+        "*.run.xml"
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // Formatting settings
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.latexindent.path": "latexindent",
+    "latex-workshop.formatting.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'"
+    ],
+    // Auto-format on save
+    "[latex]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    },
+    "[bibtex]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    }
+}
