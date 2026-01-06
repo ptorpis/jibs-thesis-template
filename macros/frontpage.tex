@@ -1,0 +1,29 @@
+\newcommand{\Frontpage}{%
+    % --- Degree / Program Info ---
+    \textbf{\FrontpageDegree}
+    \vspace{1cm}
+
+    % --- Title, authors, tutor, date ---
+    \begin{tabular}{@{}ll@{}}
+        \textbf{Title:}   & \FrontpageTitle   \\
+        \textbf{Authors:} & \FrontpageAuthors \\
+        \textbf{Tutor:}   & \FrontpageTutor   \\
+        \textbf{Date:}    & \FrontpageDate
+    \end{tabular}
+
+    \vspace{1cm}
+
+    % --- Key terms ---
+    \textbf{Key terms:} \FrontpageKeywords
+    \vspace{0.2cm}
+    \hrule height 2pt
+    \vspace{0.5cm}
+
+    % --- Abstract ---
+    \textbf{Abstract}
+    \vspace{0.3cm}
+
+    % Choose ONE:
+    \FrontpageAbstractOptionOne
+    % \FrontpageAbstractOptionTwo
+}
