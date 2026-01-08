@@ -1,15 +1,19 @@
 % Encoding and fonts
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 
 % Times-like font (close to Times New Roman)
-\usepackage{newtxtext}
-\usepackage{newtxmath}
+% \usepackage{newtxtext}
+% \usepackage{newtxmath}
+
 
 % Math
 \usepackage{amsmath}
 \let\Bbbk\relax
 \usepackage{amssymb}
+\usepackage{xcolor}
+
 
 % Graphics
 \usepackage{graphicx}
@@ -128,6 +132,7 @@
 
 \addbibresource{references.bib}
 
+% Number equations per chapter (1.1, 1.2, ...)
 \numberwithin{equation}{chapter}
 
 \input{macros/table.tex}

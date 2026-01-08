@@ -16,12 +16,16 @@
 \newcommand{\ThesisDate}{Month Year}
 
 % ---- Degree / Program Info (bottom-right text) ----
+\newcommand{\FooterItem}[2]{%
+{\scshape #1}: {\normalfont #2}\\
+}
+
 \newcommand{\ThesisFooter}{%
-    \textsc{Bachelor/Master/Degree Project [select]} \\
-    \textsc{Thesis within: Major} \\
-    \textsc{Number of credits:}  \\
-    \textsc{Programme of study:} \\
-    \textsc{Authors:} \ThesisAuthors \\
-    \textsc{\ThesisLocation} \ThesisDate
+    \FooterItem{Bachelor/Master/Degree Project}{}
+    \FooterItem{Thesis within}{Economics}
+    \FooterItem{Number of Credits}{}
+    \FooterItem{Programme of Study}{}
+    \FooterItem{Author}{\ThesisAuthors}
+    \FooterItem{Date:}{ \ThesisDate }
 }
 

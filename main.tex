@@ -27,14 +27,21 @@
     {\fontsize{16}{20}\selectfont \ThesisSubtitle\par}
 
     % Bottom-right text block, left-aligned inside
+    % Bottom-right text block, left-aligned inside
     \vfill
-    \begin{flushright}
-        \begin{minipage}{0.50\textwidth}
-            {\fontsize{10}{10}\selectfont
-                \ThesisFooter
-            }
-        \end{minipage}
-    \end{flushright}
+
+    \noindent
+    \hspace*{0.35\textwidth} % gentle horizontal offset, not full right
+    \begin{minipage}{0.6\textwidth}
+        \raggedright
+        \fontsize{10}{12}\selectfont
+        \ThesisFooter
+    \end{minipage}
+
+    \vspace{1cm}
+
+
+
 
 \end{titlepage}
 

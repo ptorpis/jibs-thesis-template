@@ -5,7 +5,7 @@ This repository contains a LaTeX template that aims to match the official MSWord
 
 ## Overview
 
-- The template uses 1 inch margins, 12pt. font, a typeface very similar to Times New Roman, 1.5 line spacing.
+- The template uses 1 inch margins, 12pt. font, 1.5 line spacing.
 - Build files and output are found in the `build` directory.
 - APA style referencing via `biblatex`
 - Clickable Table of Contents, List of Figures, List of Tables
@@ -284,7 +284,9 @@ You can switch to `OptionTwo` by commenting/uncommenting in `macros/frontpage.te
 
 ---
 
+## Fonts
 
+The default font is Latin Modern. If a Times New Roman–like font is required, replace it with newtxtext and newtxmath in the preamble (already there, just comment out the line with lmodern and uncomment those 2).
 
 ## Best Practices (non-exhaustive list)
 
